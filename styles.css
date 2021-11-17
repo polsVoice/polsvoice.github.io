@@ -151,8 +151,8 @@ section h1 {
 
 #projectGallery div div {
     float: left;
-    border: 1px solid black;
-    width: 33%;
+    border: 1px solid aqua;
+    border-radius: 10px;
     margin: 1% 0 0 10%;
     text-align: center;
 }
