@@ -1,0 +1,212 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css?family=Nova+Oval');
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: none;
+    color: #333;    
+}
+
+header, header nav ul {
+    background-color: #dedede;
+    margin: 0;
+}
+
+header h1 {
+    display: inline-block;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 1.35em;
+}
+
+header h1:hover,
+header nav ul li:hover {
+    background-color: #efefef;
+}
+
+button .fa {
+    margin: 0 .25em 0 0;
+}
+
+section {
+    background-attachment: fixed;
+    height: 100%;
+}
+
+section h1 {
+    margin: 0;
+}
+
+#bio {
+    background-image: url( "./img/the_season.jpg" );
+    height: 450px;
+}
+
+#bio, #projects {
+    text-align: center;
+}
+
+#bio img {
+    float: left;
+    margin: 1% 2%;
+    height: 50%;
+}
+
+#bio p {
+    background-color: #d9edf7;
+    margin: 1.5% 17% 1.5% 16%;
+    border-radius: 10px;
+    padding: 4%;
+    text-align: left;
+}
+
+#bio h1 {
+    font-size: 52px;
+    color: #B3B3B3;
+    -webkit-text-stroke: 1px white;
+    text-shadow: -3px -1px 0px #fff;
+}
+
+#navLinks {
+    padding-right: 0;
+}
+
+.nav.navbar-nav {
+    float: right;
+}
+
+.navbar-header .navbar-brand {
+    font-size: 4em;
+}
+
+.navbar-brand small {
+    font-size: 50%;
+    display: block;
+    margin-top: .75em;
+}
+
+#name {
+    font-family: 'Nova Oval', cursive;
+}
+
+#portfolio {
+    padding-top: 2%;
+}
+
+#portfolio h1 {
+    margin: 0 .5em;
+    background-color: #5ae;
+    border-radius: 28px 0 28px;
+    padding: 1%;
+}
+
+#contact {
+    background-image: url( "img/the-season-2.jpg" );
+    clear: both;
+    padding: 1% 2%;
+}
+
+#contact p {
+    background-color: #efefef;
+    padding: 1%;
+    border-radius: 0 0 18px 18px;
+}
+
+#contact p:first-of-type {
+    font-weight: bold;
+    border-radius: 18px 18px 0 0;
+}
+
+.buttonBar {
+    text-align: center;
+    margin-left: 3%;
+    margin-right: 1%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.bigButton span {
+    margin-right: 0.35em;
+}
+
+#projectGallery div div {
+    float: left;
+    border: 1px solid aqua;
+    border-radius: 10px;
+    margin: 1% 0 0 10%;
+    text-align: center;
+}
+
+.buttonBar #fccBtn {
+    background-image: url("./img/fcc_logo_black.svg");
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 8% 50%;
+    font-size: .75em;
+    padding-left: 25%;
+}
+
+.buttonBar #fccBtn:hover {
+    background-image: url("./img/fcc_logo_white.svg");
+}
+
+.bigButton {
+    -webkit-transition: transform ease-in 0.3s;
+    -moz-transition: transform ease-in 0.3s;
+    transition: transform ease-in 0.3s;
+    margin: 0.85em;
+    padding: 0.75em;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px #333;
+    font-size: 1.25em;
+    background-color: rgb(221,221,221);
+    display: block;
+}
+
+.bigButton:hover {
+    color: #fff;
+    background-color: #333;
+    transform: translate(0px,-1px) scale(1.15);
+    text-decoration: none;
+}
+
+.buttonBar .bigButton {
+    margin-left: 0;
+}
+
+.description {
+    background-color: #fff;
+}
+
+#contact .buttonBar {
+    display: flex;
+    float: left;
+    width: 45%;
+    display: none;
+}
+
+#contact .buttonBar #fccBtn {
+    padding-top: 2.25em;
+    padding-left: 3.25em;
+    font-size: 1em;
+}
+
+#contact.nav.navbar-nav {
+    float: none;
+}

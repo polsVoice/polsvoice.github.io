@@ -1,23 +1,101 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+		<link href="styles.css" rel="stylesheet" />
+		<title>Brent Bartlett Web Development</title>
+	</head>
+	<body>
+        <div class="container">
+            <header>
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" id="name" href="#">Brent Bartlett <small>Web Development</small></a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navLinks" aria-expanded="false">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navLinks" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#top">About</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <section id="bio">
+            <hr />
+            <div class="buttonBar">
+                <a class="bigButton" id="githubBtn" href="https://github.com/polsVoice"><span class="fa fa-github fa-lg"></span>GitHub
+                </a>
+                <a class="bigButton" id="linkedinBtn" href="https://www.linkedin.com/in/brentbartlett"><span class="fa fa-linkedin fa-lg"></span>LinkedIn
+                </a>
+                <a class="bigButton" id="fccBtn" href="http://www.freecodecamp.com/polsvoice">
+                    freeCodeCamp
+                </a>
+            </div>
+            <img class="img-circle" src="./img/brent.jpg" alt="Picture of Brent" />
+            <p>Since graduating from CSU Chico, I have been working in several fields: web design, web content management, and technical support. During the recession, I took the opportunity to go back to college and catch up on web technologies. It was certainly an eye-opening experience! While there I not only honed my JavaScript and database skills, but I learned about exciting new developments like Node.js and MongoDB, as well as utilizing modern cloud-based applications for a variety of purposes. In 2021, I graduated from Generation USA with a Jr. Web Developer certificate.
+            </p>
+        </section>
+        <section id="portfolio" class="container">
+           <h1>Project Gallery</h1>
+            <div id="projectGallery">
+                <div class="row">
+                    <div class="col-12">
+                        <a href="./projects/tip_calculator/">
+                            <img src="./img/tip_calculator.png" alt="Tip Calculator" />
+                        </a>
+                        <p class="description"><a href="./projects/tip_calculator/">Tip calculator</a></p>
+                        <p><a href="https://github.com/polsvoice/tip-calculator">Code repository (with Jasmine tests)</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="./projects/calculator/">
+                            <img src="./img/calculator.png" alt="JavaScript Calculator" />
+                        </a>
+                        <p class="description"><a href="./projects/calculator/">JavaScript calculator</a></p>
+                    </div>
+                    <div class="col">
+                        <a href="./projects/seed/">
+                            <img src="./img/seed.png" alt=".seed. to-do list app" />
+                        </a>
+                        <p class="description"><a href="./projects/seed/">.seed. task manager app</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <p>Connect with Brent
+            </p>
+            <p>brent (DOT) bartlett1 (AT) gmail (DOT) com
+            </p>
+            <div class="buttonBar">
+                <a class="bigButton" id="twitterBtn" href="https://twitter.com/BrentBartlettBC"><span class="fa fa-twitter fa-lg"></span>Twitter
+                </a>
+                <a class="bigButton" id="githubBtn" href="https://github.com/polsVoice"><span class="fa fa-github fa-lg"></span>GitHub
+                </a>
+                <a class="bigButton" id="linkedinBtn" href="https://www.linkedin.com/in/brentbartlett"><span class="fa fa-linkedin fa-lg"></span>LinkedIn
+                </a>
+                <a class="bigButton" id="fccBtn" href="http://www.freecodecamp.com/polsvoice">
+                    freeCodeCamp
+                </a>
+            </div>
+        </section>
+        <footer>
+            <ul class="nav navbar-nav">
+                <li><a href="#bio">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </footer>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	</body>
+</html>
