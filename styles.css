@@ -54,6 +54,7 @@ section h1 {
 
 #bio {
     background-image: url( "./img/the_season.jpg" );
+    background-repeat: no-repeat;
     height: 450px;
 }
 
