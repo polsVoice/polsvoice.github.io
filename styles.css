@@ -53,7 +53,6 @@ section h1 {
 }
 
 #bio {
-    background-image: url( "./img/the_season.jpg" );
     background-repeat: no-repeat;
     height: 450px;
 }
@@ -117,7 +116,6 @@ section h1 {
 }
 
 #contact {
-    background-image: url( "img/the-season-2.jpg" );
     clear: both;
     padding: 1% 2%;
 }
