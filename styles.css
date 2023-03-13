@@ -43,11 +43,6 @@ button .fa {
     margin: 0 .25em 0 0;
 }
 
-section {
-    background-attachment: fixed;
-    height: 100%;
-}
-
 section h1 {
     margin: 0;
 }
