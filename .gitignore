@@ -1,4 +1,1 @@
-_site
-.sass-cache
-.jekyll-metadata
-fiveserver.config.js
+node_modules
