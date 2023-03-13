@@ -147,19 +147,6 @@ section h1 {
     text-align: center;
 }
 
-.buttonBar #fccBtn {
-    background-image: url("./img/fcc_logo_black.svg");
-    background-size: 20%;
-    background-repeat: no-repeat;
-    background-position: 8% 50%;
-    font-size: .75em;
-    padding-left: 25%;
-}
-
-.buttonBar #fccBtn:hover {
-    background-image: url("./img/fcc_logo_white.svg");
-}
-
 .bigButton {
     -webkit-transition: transform ease-in 0.3s;
     -moz-transition: transform ease-in 0.3s;
