@@ -63,8 +63,8 @@ section h1 {
 }
 
 #bio {
-  background-repeat: no-repeat;
-  height: 450px;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 #bio, #projects {
@@ -161,11 +161,11 @@ section h1 {
   flex-direction: column;
 }
 
-.bigButton span {
+.big-button span {
   margin-right: 0.35em;
 }
 
-.bigButton {
+.big-button {
   -webkit-transition: transform ease-in 0.3s;
   -moz-transition: transform ease-in 0.3s;
   transition: transform ease-in 0.3s;
@@ -176,17 +176,14 @@ section h1 {
   font-size: 1.25em;
   background-color: rgb(221,221,221);
   display: block;
+  width: 100%;
 }
 
-.bigButton:hover {
+.big-button:hover {
   color: #fff;
   background-color: #333;
   transform: translate(0px,-1px) scale(1.15);
   text-decoration: none;
-}
-
-.buttonBar .bigButton {
-  margin-left: 0;
 }
 
 .description {
