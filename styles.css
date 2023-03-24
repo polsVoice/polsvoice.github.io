@@ -79,7 +79,6 @@ section h1 {
 
 #bio p {
   background-color: #d9edf7;
-  margin: 1.5% 17% 1.5% 16%;
   border-radius: 10px;
   padding: 4%;
   text-align: left;
@@ -156,9 +155,9 @@ section h1 {
   text-align: center;
   margin-left: 3%;
   margin-right: 1%;
-  float: right;
   display: flex;
   flex-direction: column;
+  padding: 0 4rem 0;
 }
 
 .big-button span {
