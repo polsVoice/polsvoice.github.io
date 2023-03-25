@@ -72,7 +72,9 @@ section h1 {
 }
 
 #bio img {
-  height: 50%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
 }
 
 #bio p {
@@ -200,4 +202,10 @@ section h1 {
 
 #contact.nav.navbar-nav {
   float: none;
+}
+
+@media screen and (max-width: 800px) {
+  #bio {
+    grid-template-columns: 1fr;
+  }
 }
