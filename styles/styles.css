@@ -211,4 +211,7 @@ section h1 {
   #bio {
     grid-template-columns: 1fr;
   }
+  #project-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }/*# sourceMappingURL=styles.css.map */
