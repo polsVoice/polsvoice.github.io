@@ -188,17 +188,19 @@ section h1 {
   background-color: #fff;
 }
 
-#contact .buttonBar {
-  display: flex;
-  float: left;
-  width: 45%;
-  display: none;
-}
+#contact {
+  .buttonBar {
+    display: flex;
+    float: left;
+    width: 45%;
+    display: none;
 
-#contact .buttonBar #fccBtn {
-  padding-top: 2.25em;
-  padding-left: 3.25em;
-  font-size: 1em;
+    #fccBtn {
+      padding-top: 2.25em;
+      padding-left: 3.25em;
+      font-size: 1em;
+    }
+  }
 }
 
 #contact.nav.navbar-nav {
